@@ -16,29 +16,7 @@ class WishlistController extends Controller
      }
 
 
-     /*
-     public function addwishlist(Request $request){
-        if(Auth::check())
-        {
-            $post_id = $request->input('post_id');
-
-            if(Post::find( $post_id)){
-            $wish = new Wishlist();
-            $wish->post_id = $post_id;
-            $wish->user_id = Auth::id();
-            $wish->save();
-            return response()->json(['status'=>"Product Added to Wishlist"]) ;
-
-            }       
-            else{
-                return response()->json(['status'=>"Product does not exist"]) ;
-            }  
-        }  
-        else{
-            return response()->json(['status'=>"Login to Continue"]) ;
-        } 
-     }
-*/
+    
 
 public function addwishlist(Request $request){
     $post_id = $request->post_id;
