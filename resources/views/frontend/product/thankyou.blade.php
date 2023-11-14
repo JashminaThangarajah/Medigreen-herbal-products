@@ -1,0 +1,1 @@
+<h3>Thank You for your order.You will receive your item soon</h3>
